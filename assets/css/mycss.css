@@ -33,6 +33,11 @@ footer, header, hgroup, menu, nav, section {
         border-radius: 100px;
         width: 75px;
     }
+	
+	.main.style2s {
+		background-image: url(../../images/pic01.jpg);
+		background-size: cover;
+	}
 
 
 	
