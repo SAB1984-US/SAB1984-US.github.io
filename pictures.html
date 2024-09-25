@@ -11,6 +11,7 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <w3><link rel="stylesheet" href="assets/css/w3.css" /></w3>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+
   </head>
 
   <style>
@@ -36,44 +37,56 @@
     </div>
 
     <hr>
-    <div class="w3-display-container w3-center">
-      <img src="images/BookPics/Backdrop.jpg" alt="" style="width: 100%;">
-        <div>
-          <h1 class="w3-display-topmiddle" style="margin-top: 25px; color: black;"><b>Picture Gallery</b></h1>
-          <p class="w3-display-topmiddle" style="margin-top: 65px; color:black">Welcome to the Picture Gallery where all the pictures from the books are but in color.</p>
-          <div class="w3-container w3-content w3-display-middle w3-center">
-            <div>
-              <img class="mySlides" src="images/BookPics/QuilPaper&Ink.jpg" style="max-width: 400px;">
-              <img class="mySlides" src="images/BookPics/Elvis'Bible.jpg" style="max-width: 400px;">
-              <img class="mySlides" src="images/BookPics/Bumblebee.jpg" style="max-width: 400px;">
-              <img class="mySlides" src="images/BookPics/PrinceOfPeaceRocks.jpg" style="max-width: 400px;">
-              <img class="mySlides" src="images/BookPics/SalvadorDaliPainting.png" style="max-width: 400px;">
-              <img class="mySlides" src="images/BookPics/ChickensInTree.jpg" style="max-width: 400px;">
-            </div>  
-              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
-          </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
+    <div class="w3-display-container w3-center" style="height: 1500px">
+      <img class="" src="images/BookPics/Backdrop.jpg" alt="" style="min-height: 1500px; width: 100%;">
+      <h2 class="w3-display-topmiddle" style="margin-top: 1%;"><strong class="w3-text-black">Picture Gallery</strong></h2>
       
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+      
+      <div class="w3-display-middle w3-card-4 w3-round-xlarge w3-dark-grey w3-content" style="min-height: 500px; min-width: 400px; margin-top: 1%;">
+        <div class="w3-container w3-content w3-center">
+          <h3 class="w3-text-black">Prince of Peace Pics</h3>
+          <div>
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/QuilPaper&Ink.jpg" style="grid-row:span">
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/Elvis'Bible.jpg" style="grid-row:span">
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/Bumblebee.jpg" style="grid-row:span">
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/PrinceOfPeaceRocks.jpg" style="grid-row:span">
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/SalvadorDaliPainting.png" style="grid-row:span">
+            <img class="mySlides w3-round-xlarge" src="images/BookPics/ChickensInTree.jpg" style="grid-row:span">
+          </div>
+          <hr>
+          <h5></h5>
+    
+          <div class="w3-section">
+            <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivs(-1)" style="margin-right: 10%">Previous</button>
+            <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivs(1)" style="margin-left: 10%">Next</button>
+          </div>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+        
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
           }
-          x[slideIndex-1].style.display = "block";  
-        }
-      </script>
-    </div>        
+        
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+        </script>
+
+      </div>
+      
+    
+    </div>
 
   </body>
 

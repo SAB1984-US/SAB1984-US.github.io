@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>picture gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <w3><link rel="stylesheet" href="assets/css/w3.css" /></w3>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+  
+  <style>
+  .mySlides {display:none;}
+  </style>
+
+  <body>
+
+    <!-- Navigation (Stays on Top) -->
+    <div class="w3-top w3-bar w3-dark-grey w3-wide w3-padding w3-card w3-border-bottom w3-border-black">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <div class="w3-right w3-hide-small">
+            <a href="aboutPage.html" class="w3-bar-item w3-button">About</a>
+            <a href="https://citiofbooks.com/blog/jesus-of-nazareth-our-liberator-by-beatrice-francis-carey-is-now-available-for-purchase/" class="w3-bar-item w3-button">Blog</a>
+            <a href="bookindex.html" class="w3-bar-item w3-button">Books</a>
+        </div>
+    </div>
+
+    <hr>
+    <div class="w3-display-container w3-center">
+      <img src="images/BookPics/Backdrop.jpg" alt="" style="width: 100%;">
+        <div>
+          <h1 class="w3-display-topmiddle" style="margin-top: 25px; color: black;"><b>Picture Gallery</b></h1>
+          <p class="w3-display-topmiddle" style="margin-top: 65px; color:black">Welcome to the Picture Gallery where all the pictures from the books are but in color.</p>
+          <div class="w3-container w3-content w3-display-middle w3-center">
+            <div>
+              <img class="mySlides" src="images/BookPics/QuilPaper&Ink.jpg" style="max-width: 400px;">
+              <img class="mySlides" src="images/BookPics/Elvis'Bible.jpg" style="max-width: 400px;">
+              <img class="mySlides" src="images/BookPics/Bumblebee.jpg" style="max-width: 400px;">
+              <img class="mySlides" src="images/BookPics/PrinceOfPeaceRocks.jpg" style="max-width: 400px;">
+              <img class="mySlides" src="images/BookPics/SalvadorDaliPainting.png" style="max-width: 400px;">
+              <img class="mySlides" src="images/BookPics/ChickensInTree.jpg" style="max-width: 400px;">
+            </div>  
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+      
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+      </script>
+    </div>        
+
+  </body>
+
+</html>
