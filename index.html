@@ -33,6 +33,7 @@
 			<a href="bookindex.html" class="w3-bar-item w3-button">Books</a>
 			</div>
 		</div>
+
 		<hr>
 
 		<!-- Header -->
@@ -43,15 +44,16 @@
 				<div class="inner">
 					<span class="BeaProfile"><img src="images/BookPics/BeaProfile.jpg" alt="" /></span>
 					<h1 style="padding-top: 50px"><strong>Beatrice Francis Carey</strong></h1>
-					<p>"If God did not exist, <br /> it would be necessary to invent him."</p>
-					<p style="padding-left: 15%;">Voltaire</p>
+					<p>"Man shall not live by bread alone, <br />but by every word that proceeds out of my mouth."</p>
+					<p style="padding-left: 15%;">  </p>
 					<ul class="actions special">
-						<li><a href="https://citiofbooks.com/blog/jesus-of-nazareth-our-liberator-by-beatrice-francis-carey-is-now-available-for-purchase/" class="button scrolly">Discover</a></li>
+						<li><a href="#one" class="button scrolly">Discover</a></li>
 					</ul>
 				</div> 
 			</section>
 
 		<!-- One -->
+		 
 			<section id="one" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
@@ -81,7 +83,7 @@
 							<h3 class="w3-center w3-text-black">Elvis Presley</h3>
 							<p class="w3-center w3-text-black">Here's where you can find the pics from the books but in color.</p>
 							<ul class="actions special">
-								<li><a href="/pictures.html" class="button w3-text-black">Pictures</a></li>
+								<li><a href="#pictures" class="button scrolly w3-text-black">Pictures</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -89,7 +91,7 @@
 							<h3>Elvis Again</h3>
 							<p class="w3-center">Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley </p>
 							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#OldQuotes" class="button">Quotes</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -97,7 +99,7 @@
 							<h3>Even More Elvis!</h3>
 							<p class="w3-center">Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley Elvis Presley </p>
 							<ul class="actions special">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#Prayers" class="button">Prayers</a></li>
 							</ul>
 						</div>
 					</div>
@@ -105,18 +107,177 @@
 			</section>
 
 		<!-- Four -->
+
+			<section id="pictures">
+			
+				<div class="w3-dropdown-hover" style="width: 10%">
+					<button class="w3-button">Voltaire <i class="fa fa-caret-down"></i></button>
+					<div class="w3-dropdown-content w3-bar-block w3-white w3-card-4" style="width:600px"><br>
+						<img src="images/Voltaire.png" class="w3-round-xlarge" alt="Voltaire Quote" style="width:100%">
+					</div>
+				</div>
+	  
+				<div class="w3-display-container w3-content w3-center">
+				  <h3 class="w3-text-black">Prince of Peace Pics</h3>
+				  	<div class="w3-section">
+				  	  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivs(-1)" style="margin-right: 10%">Previous</button>
+				  	  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivs(1)" style="margin-left: 10%">Next</button>
+				  	</div>
+  
+					<div class="w3-container">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/QuilPaper&Ink.jpg" style="width: 400px;">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/Elvis'Bible.jpg">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/Bumblebee.jpg" style="grid-row:span; width: 400px;">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/PrinceOfPeaceRocks.jpg" style="grid-row:span; width: 500px;">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/SalvadorDaliPainting.png" style="grid-row:span; width: 500px;">
+					  <img class="mySlides w3-round-xlarge w3-content" src="images/BookPics/ChickensInTree.jpg" style="grid-row:span; width: 500px;">
+					</div>
+
+					<hr>
+
+				</div>
+				  
+				  <script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+				  
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+				  
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+				  </script>
+
+			</section>
+
+			<hr>
+
+			<section id="OldQuotes">
+	  
+				<div class="w3-display-container w3-content w3-center">
+				  <h3 class="w3-text-black">Old Quotes</h3>
+				  	<div class="w3-section">
+				  	  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivsPr(-1)" style="margin-right: 10%">Previous</button>
+				  	  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivsPr(1)" style="margin-left: 10%">Next</button>
+				  	</div>
+
+					<div class="w3-container">
+					  
+						<div class="w3-card-4 w3-dark-grey w3-round-xlarge w3-content" style="width:50%">
+					  
+						  <div class="w3-container">
+							<img class="mySlidesPr w3-round-xlarge w3-content" src="images/Voltaire.png" alt="Avatar" style="width:80%">
+							<div class="mySlidesPr">
+								<h1 style="color: black;">Isaiah 54:17 pg.879</h1>
+								<p>No weapon that is formed against Thee shall prosper; and every tongue that shall raise against thee in judgment Thou shalt condemn. This is the heritage of the servants of the LORD, and their Righteousness is of ME, saithe the LORD</p>					  
+							</div>
+							<div class="mySlidesPr">
+								<h1 style="color: black;">Ezekial 16:49</h1>
+								<p>Behold this was the iniquity of the sister Sodom Pride fulness of bread and abundance of idleness was in her and in her daughters neither did she strengthen the hand of the Poor and Needy.</p>					  
+							</div>
+
+						  </div>
+					  
+						</div>
+					  </div>
+
+					<hr>
+
+				</div>
+				  
+				<script>
+					var slideIndex = 1;
+					showDivsPr(slideIndex);
+				  
+					function plusDivsPr(n) {
+					  showDivsPr(slideIndex += n);
+					}
+				  
+					function showDivsPr(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlidesPr");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+				  </script>
+
+			</section>
+
+			<hr>
+
+			<section id="Prayers">
+	  
+				<div class="w3-display-container w3-content w3-center">
+				  <h3 class="w3-text-black">Prayers We Should Know</h3>
+				  	<div class="w3-section">
+						  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivsQt(-1)" style="margin-right: 10%">Previous</button>
+						  <button class="w3-button w3-green w3-text-black w3-round-large" onclick="plusDivsQt(1)" style="margin-left: 10%">Next</button>
+				  	</div>
+
+					<div class="w3-container">
+					  
+						<div class="w3-card-4 w3-dark-grey w3-round-xlarge w3-content" style="width:50%">
+					  
+						  <div class="w3-container">
+							<img class="mySlidesQt w3-round-xlarge w3-content" src="images/TheLordsPrayer.jpg" alt="TheLordsPrayer" style="width:80%">
+							<img class="mySlidesQt w3-round-xlarge w3-content" src="images/PrayerOfManessah.jpg" alt="PrayerOfManessah" style="width:80%">
+							<img class="mySlidesQt w3-round-xlarge w3-content" src="images/fecacd.jpg" alt="" style="width:80%">
+						  </div>
+					  
+						</div>
+					  </div>
+
+					<hr>
+
+				</div>
+				  
+				<script>
+					var slideIndex = 1;
+					showDivsQt(slideIndex);
+				  
+					function plusDivsQt(n) {
+					  showDivsQt(slideIndex += n);
+					}
+				  
+					function showDivsQt(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlidesQt");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+				  </script>
+
+			</section>
+
 			<section id="four" class="main style2 special">
 				<div class="container">
 					<header class="major">
-						<h2>Ipsum feugiat consequat?</h2>
+						<h2>?</h2>
 					</header>
-					<p>Sed lacus nascetur ac ante amet sapien.</p>
+					<p style="color: white;">.</p>
 					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
-						<li><a href="#" class="button wide">Learn More</a></li>
+						<li><a href="#" class="button wide primary">Click</a></li>
 					</ul>
 				</div>
 			</section>
+			
 
 		<!-- Five -->
 		<!--
@@ -439,14 +600,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
 					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Untitled Inc</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</section>
 
